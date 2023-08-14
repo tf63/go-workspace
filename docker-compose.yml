@@ -7,4 +7,4 @@ services:
       dockerfile: docker/backend/Dockerfile
     tty: true
     volumes:
-      - ../:/app
+      - ./:/app
