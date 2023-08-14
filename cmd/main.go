@@ -25,5 +25,8 @@ func main() {
 	// internal.ArraySample()
 	// internal.ArraySizeSample()
 
-	internal.MapSample()
+	// internal.MapSample()
+
+	// internal.InterfaceSample()
+	internal.IntefaceImplementSample()
 }
