@@ -169,7 +169,7 @@
 ```
 
 **struct pointer**
-- ポインターに値を代入できる
+- メンバアクセスがデフォルトでアロー演算子のように働く
 ```
 	p := Person{name: "aa", age: 30}
 	pp := &p
@@ -211,4 +211,35 @@
 	println("(value) name:", p.name, "age:", p.age) // 更新できない
 	funcStructPointerInput(&p) // 参照渡し
 	println("(pointer) name:", p.name, "age:", p.age) // 更新できる
+```
+
+**structのreceiver**
+- value receiverとpointer receiverがある
+```
+    func (p Person) changeNameWithValue(name string) {
+        p.name = name
+    }
+
+    func (p *Person) changeNameWithPointer(name string) {
+        p.name = name
+    }
+```
+
+- value receiverはフィールドを更新しないが，pointer receiverはフィールドを更新する
+```
+	println("value receiver")
+	p.changeNameWithValue("updated")
+	println(p.intro()) // not updated
+
+	println("pointer receiver")
+	p.changeNameWithPointer("updated")
+	println(p.intro()) // updated
+```
+
+**structの埋め込み**
+- 継承構文はないが, structを埋め込むことで同じようなことができる
+```
+    type User struct {
+        Person
+    }
 ```

@@ -17,5 +17,13 @@ func main() {
 
 	// internal.StructSample()
 	// internal.StructPointerSample()
-	internal.StructFuncSample()
+	// internal.StructFuncSample()
+	// internal.StructMethodSample()
+	// internal.StructExtendSample()
+
+	// internal.ArrayTypeSample()
+	// internal.ArraySample()
+	// internal.ArraySizeSample()
+
+	internal.MapSample()
 }
