@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    tty: true
+    volumes:
+      - ../:/app
