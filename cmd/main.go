@@ -28,5 +28,9 @@ func main() {
 	// internal.MapSample()
 
 	// internal.InterfaceSample()
-	internal.IntefaceImplementSample()
+	// internal.IntefaceImplementSample()
+
+	// internal.NotGoRoutineSample()
+	// internal.ChannelSample()
+	internal.GoRoutineSample()
 }
