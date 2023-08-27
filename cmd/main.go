@@ -32,5 +32,6 @@ func main() {
 
 	// internal.NotGoRoutineSample()
 	// internal.ChannelSample()
-	internal.GoRoutineSample()
+	// internal.GoRoutineSample()
+	internal.BufferSample()
 }
